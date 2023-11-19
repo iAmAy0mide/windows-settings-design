@@ -1,0 +1,74 @@
+
+.right-sidebar {
+    margin-left: 465px;
+}
+
+.advanced-settings {
+    margin-bottom: 30px;
+}
+.related-settings {
+    margin-bottom: 10px;
+    font-size: 25px;
+    cursor: default;
+} 
+.cont {
+    margin-bottom: 20px;
+}
+.blue {
+    color: rgb(46, 122, 197);
+    margin-bottom: 10px;
+}
+.sync {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.adv-help .get {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.get p {
+    margin-left: 20px;
+}
+.blue:hover {
+    color: rgba(185, 181, 181, 0.799);
+    cursor: pointer;
+}
+@media (min-width: 1510px) {
+    
+    .right-sidebar {
+        position: absolute;
+        right: 140px;
+        width: 200px;
+        top: 140px;
+        z-index: -5;
+    }
+    /* .blue {
+        color: dodgerblue;
+        margin-bottom: 10px;
+    }
+    .blue:hover {
+        color: rgba(185, 181, 181, 0.799);
+        cursor: pointer;
+    } */
+    .related-settings {
+        font-size: 17px
+        
+    } 
+}
+@media (max-width: 1000px) {
+    .right-sidebar {
+        margin-left: 20px;
+    }
+    .related-settings {
+        font-size: 25px;
+    }  
+    /* .blue {
+        color: dodgerblue;
+        margin-bottom: 10px;
+    }
+    .blue:hover {
+        color: rgba(185, 181, 181, 0.799);
+        cursor: pointer;
+    } */
+}

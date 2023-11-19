@@ -1,0 +1,122 @@
+
+.left-sidebar {
+    width: 425px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #1f1f1f;
+}
+.settings-container {
+    display: flex;
+    margin-bottom: 11px;
+    padding: 18px 16px;
+    cursor: default;
+}
+.settings-container img {
+    width: 30px;
+}
+.settings-container .settings {
+    margin-left: 37px;
+    font-size: 14px;
+}
+@media (max-width: 1000px) {
+
+    .left-sidebar {
+        opacity: 0;
+        z-index: -3;
+        position: absolute;
+    }
+    .settings-container img {
+        z-index: 67;
+        font-size: 20px;
+        position: absolute;
+        top: 12px;
+    }
+    .settings-container .settings {
+        margin-left: 65px;
+        font-size: 14px;
+    }
+
+}
+@media (min-width:1000px) {
+    .small-size-settings {
+        opacity: 0;
+        position: absolute;
+    }
+}
+.active-border {
+    border-left: 6px solid dodgerblue;
+    height: 35px;
+}
+.navigations-active {
+    display: flex;
+    align-items: center;
+    transition: background-color .18s;
+    cursor: default;
+    padding: 14px 0;
+}
+.navigations-active img {
+    margin-left: 8px;
+    height: 23px;
+}
+.navigations img {
+    height: 23px;
+}
+.navigations {
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+    transition: background-color .18s;
+    cursor: default;
+}
+.navigations:hover, .navigations-active:hover {
+    background-color: rgb(96, 96, 96);
+}
+.navigations p, .navigations-active p {
+    margin-left: 16px;
+}
+.personalization {
+    margin-bottom: 30px;
+    margin-left: 16px;
+    font-weight: 600;
+    cursor: default;
+}
+.search-setting-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+.search-setting-container img {
+    position: absolute;
+    right: 21px;
+    bottom: 18px;
+    height: 28px;
+}
+.search-setting-container input {
+    height: 37px;
+    width: 358px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #131313;
+    border: 3px solid grey;
+    color: white;
+    padding: .1rem 1rem;
+    font-size: 17px;
+}
+.search-setting-container input:focus {
+    background-color: #131313;
+    border: 3px solid grey;
+}
+.search-setting-container input:focus::content {
+    border: 3px solid grey;
+
+}
+
+.search-setting-container input::placeholder {
+    padding: 2rem 0;
+    color: rgba(255, 255, 255, 0.382);
+    font-size: 17px;
+}

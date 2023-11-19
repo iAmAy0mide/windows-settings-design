@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* font-family: 'Lucida Sans Unicode'; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    /* background-color: #242424; */
+    /* background-color: #0a0a0a; */
+    background-color: black;
+    scroll-behavior: smooth;
+}
